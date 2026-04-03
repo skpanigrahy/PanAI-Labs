@@ -127,9 +127,9 @@ frontend/
 ---
 
 ### 🎯 Who This Is For
-Software engineers moving into AI
-Builders who want real systems (not tutorials)
-Teams exploring AI architecture
+- Software engineers moving into AI
+- Builders who want real systems (not tutorials)
+- Teams exploring AI architecture
 ---
 ### 🚀 Vision
 PanAI Labs is not just a project.
