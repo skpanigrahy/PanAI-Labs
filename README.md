@@ -103,13 +103,12 @@ cd PanAI-Labs
 docker-compose up --build
 ```
 
-Open:
+### Open:
 
-UI → http://localhost:8501
-API → http://localhost:8000/docs
+- UI → http://localhost:8501
+- API → http://localhost:8000/docs
 
----
-📂 Project Structure
+### 📂 Project Structure
 ```bash
 backend/
   ├── agent/
@@ -118,9 +117,7 @@ backend/
   ├── db/
 frontend/
 ```
----
 
----
 ### 🧠 Tech Stack
 - Python (FastAPI)
 - LLM APIs
@@ -129,30 +126,18 @@ frontend/
 - Docker
 ---
 
----
-### 🧠 Tech Stack
-- Python (FastAPI)
-- LLM APIs
-- FAISS (Vector DB)
-- Streamlit
-- Docker
----
-
----
-###🚀 Vision
-
+### 🚀 Vision
 PanAI Labs is not just a project.
 It’s a step toward:
 - A platform for designing, orchestrating, and deploying AI intelligence
----
 
----
+
+
 ### ⭐ Support
 If this helps you:
-⭐ Star the repo
-🔁 Share with others
-🤝 Contribute
----
+- ⭐ Star the repo
+- 🔁 Share with others
+- 🤝 Contribute
 
 ---
 ### 🧠 Author
