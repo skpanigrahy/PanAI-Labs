@@ -52,6 +52,7 @@ User → UI → API → Orchestrator
          ↓                               ↓
          └──────── Final Answer ─────────┘
 
+```
 🚀 Features
 
 🤖 Multi-Agent System
