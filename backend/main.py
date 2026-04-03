@@ -3,6 +3,7 @@ from pydantic import BaseModel
 from agent.agent import run_agent
 from agent.intent import analyze_intent
 from agent.router import route_query
+from agent.memory import memory
 
 app = FastAPI(title="PanAI-Labs API", version="1.0.0")
 
@@ -12,24 +13,36 @@ class Message(BaseModel):
 
 class ChatRequest(BaseModel):
     messages: list[Message]
+    session_id: str = "default"
 
 @app.post("/chat")
 async def chat(request: ChatRequest):
     try:
+        session_id = request.session_id
         messages = [msg.dict() for msg in request.messages]
 
-        # Extract latest user query
+        # Get last user query
         user_query = messages[-1]["content"]
 
-        # Step 1: Intent detection
+        # Save user message
+        memory.add_message(session_id, "user", user_query)
+
+        # Get full history
+        history = memory.get_history(session_id)
+
+        # Intent detection
         intent = analyze_intent(user_query)
 
-        # Step 2: Routing
-        response = route_query(intent, messages)
+        # Route with history
+        response = route_query(intent, history)
+
+        # Save assistant response
+        memory.add_message(session_id, "assistant", response)
 
         return {
             "intent": intent,
-            "response": response
+            "response": response,
+            "history_length": len(history)
         }
 
     except Exception as e:
