@@ -108,7 +108,7 @@ Open:
 UI → http://localhost:8501
 API → http://localhost:8000/docs
 
-
+---
 📂 Project Structure
 ```bash
 backend/
@@ -118,42 +118,43 @@ backend/
   ├── db/
 frontend/
 ```
+---
 
-🧠 Tech Stack
-Python (FastAPI)
-LLM APIs
-FAISS (Vector DB)
-Streamlit
-Docker
+---
+### 🧠 Tech Stack
+- Python (FastAPI)
+- LLM APIs
+- FAISS (Vector DB)
+- Streamlit
+- Docker
+---
 
-🧠 Tech Stack
-Python (FastAPI)
-LLM APIs
-FAISS (Vector DB)
-Streamlit
-Docker
+---
+### 🧠 Tech Stack
+- Python (FastAPI)
+- LLM APIs
+- FAISS (Vector DB)
+- Streamlit
+- Docker
+---
 
-🚀 Vision
+---
+###🚀 Vision
 
 PanAI Labs is not just a project.
-
 It’s a step toward:
-A platform for designing, orchestrating, and deploying AI intelligence
+- A platform for designing, orchestrating, and deploying AI intelligence
+---
 
-⭐ Support
-
+---
+### ⭐ Support
 If this helps you:
-
 ⭐ Star the repo
 🔁 Share with others
 🤝 Contribute
+---
 
-⭐ Support
-
-If this helps you:
-
-⭐ Star the repo
-🔁 Share with others
-🤝 Contribute
-
-
+---
+### 🧠 Author
+Built by Santosh Panigrahy
+---
