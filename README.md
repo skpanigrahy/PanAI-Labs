@@ -87,65 +87,59 @@ Specialized Agents (Planner / Executor / Reviewer)
                     Final Output
 ```
 
+### 🧠 Key Concepts
+🔹 Multi-Agent Systems
+
+- Instead of one assistant, multiple specialized agents collaborate.
+
+🔹 RAG (Retrieval-Augmented Generation)
+
+- AI uses real data instead of guessing.
+
+🔹 Memory
+
+- Systems remember context across interactions.
+
+🔹 Reflection Loop
+
+- AI evaluates and improves its own output.
+
+🔹 Agent Routing
+
+- Tasks are dynamically assigned to the right agent.
+
+---
 ### 🚀 What You Can Build
+
 With PanAI Labs, you can:
 - Build AI systems step-by-step
 - Use your own data with RAG
 - Create multi-agent workflows
 - Design self-improving AI pipelines
 - Understand how real AI architectures work
----
-### 🧭 Roadmap (Coming Next)
-We will build this step-by-step:
-- Basic AI agent
+- Experiment with agent orchestration
+
+### 🧭 Roadmap
+We will build this system step-by-step:
+- Minimal AI agent (foundation)
+- Add intent understanding
+- Add agent routing
 - Add memory
 - Add RAG
-- Add multi-agent system
+- Add multi-agent orchestration
 - Add reflection loop
 - Build full platform (PanAI Studio)
----
-
-## ⚡ Quick Start
-
-```bash
-git clone https://github.com/skpanigrahy/PanAI-Labs.git
-cd PanAI-Labs
-docker-compose up --build
-```
-
-### Open:
-
-- UI → http://localhost:8501
-- API → http://localhost:8000/docs
-
-### 📂 Project Structure
-```bash
-backend/
-  ├── agent/
-  ├── multi_agent/
-  ├── rag/
-  ├── db/
-frontend/
-```
-
-### 🧠 Tech Stack
-- Python (FastAPI)
-- LLM APIs
-- FAISS (Vector DB)
-- Streamlit
-- Docker
----
 
 ### 🎯 Who This Is For
 - Software engineers moving into AI
 - Builders who want real systems (not tutorials)
 - Teams exploring AI architecture
----
+- Anyone who wants to go beyond chatbots
+
 ### 🚀 Vision
 PanAI Labs is not just a project.
 It’s a step toward:
 - A platform for designing, orchestrating, and evolving AI intelligence
----
 
 ### ⭐ Support
 If this helps you:
