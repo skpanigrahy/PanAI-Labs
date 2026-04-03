@@ -1,4 +1,4 @@
-# 🚀 PanAI Labs — Building Self-Improving AI Systems
+# 🚀 PanAI Labs — Designing Self-Improving AI Systems
 
 > From prompts to production-grade intelligent systems
 
@@ -6,14 +6,15 @@
 
 ## 🧠 What is PanAI Labs?
 
-PanAI Labs is an open platform to design, build, and understand **real-world AI systems**.
+PanAI Labs is an open platform to **design, build, and understand real-world AI systems**.
 
 It focuses on:
 
-- 🤖 Multi-agent architecture  
-- 📚 Retrieval-Augmented Generation (RAG)  
-- 💾 Persistent memory  
-- 🔁 Self-improving feedback loops  
+- 🤖 Multi-agent systems (not just single assistants)
+- 📚 Retrieval-Augmented Generation (RAG)
+- 💾 Persistent memory (context-aware systems)
+- 🔁 Self-improving feedback loops
+- 🔀 Intelligent routing across agents
 
 ---
 
@@ -41,6 +42,7 @@ Today, most developers:
 - Get stuck at “what next?” ❌  
 
 AI feels powerful, but:
+
 - Hard to structure  
 - Hard to scale  
 - Hard to trust  
@@ -49,13 +51,19 @@ AI feels powerful, but:
 
 ## 💡 The Approach
 
-PanAI Labs introduces a system-driven way of building AI:
+PanAI Labs introduces a **system-driven way of building AI**:
 
 > Plan → Execute → Review → Reflect → Improve
 
+And extends it further with:
+
+> Intent → Route → Specialized Agents → Feedback Loop
+
 Instead of generating answers once, the system:
 
-- Thinks in steps  
+- Understands intent  
+- Routes tasks intelligently  
+- Uses multiple agents  
 - Evaluates outputs  
 - Improves iteratively  
 
@@ -66,15 +74,17 @@ Instead of generating answers once, the system:
 ```text
 User
   ↓
-Orchestrator
+Intent Analyzer
   ↓
-Planner → Executor → Reviewer
-                     ↓
-               Reflection
-                     ↓
-              (Retry if needed)
-                     ↓
-                Final Output
+Agent Router
+  ↓
+Specialized Agents (Planner / Executor / Reviewer)
+                          ↓
+                   Reflection Layer
+                          ↓
+                  (Retry if needed)
+                          ↓
+                    Final Output
 ```
 
 ### 🚀 What You Can Build
