@@ -53,76 +53,54 @@ User → UI → API → Orchestrator
          └──────── Final Answer ─────────┘
 
 ```
-🚀 Features
 
-🤖 Multi-Agent System
-  Planner → breaks down problems
-  Executor → performs tasks
-  Reviewer → improves output
+## 🚀 Features
 
-📚 RAG (Chat with Your Data)
-  Upload documents
-  Context-aware answers
-  Reduced hallucination
+### 🤖 Multi-Agent System
+- Planner → breaks down problems  
+- Executor → performs tasks  
+- Reviewer → improves output  
 
-💾 Persistent Memory
-  Conversation history
-  Multi-session awareness
+---
 
-⚡ Production Ready
-  FastAPI backend
-  Streamlit UI
-  Dockerized deployment
+### 📚 RAG (Chat with Your Data)
+- Upload documents  
+- Context-aware answers  
+- Reduced hallucination  
 
-How This Helps You
+---
+
+### 💾 Persistent Memory
+- Conversation history  
+- Multi-session awareness  
+
+---
+
+### ⚡ Production Ready
+- FastAPI backend  
+- Streamlit UI  
+- Dockerized deployment  
+
+---
+
+## 🧭 How This Helps You
 
 With PanAI Labs, you can:
-  Build your first AI system step-by-step
-  Understand how real AI architectures work
-  Move from experiments → production-ready systems
-  Use your own data with RAG
-  Design multi-agent workflows
 
-⚡ Quick Start
-  git clone https://github.com/skpanigrahy/PanAI-Labs.git
-  cd PanAI-Labs
-  docker-compose up --build
+- Build your first AI system step-by-step  
+- Understand how real AI architectures work  
+- Move from experiments → production-ready systems  
+- Use your own data with RAG  
+- Design multi-agent workflows  
 
-Open:
-  UI → http://localhost:8501
-  API → http://localhost:8000/docs
+---
 
-📂 Project Structure
-backend/
-  ├── agent/
-  ├── multi_agent/
-  ├── rag/
-  ├── db/
-frontend/
+## ⚡ Quick Start
 
-🧠 Tech Stack
-  Python (FastAPI)
-  LLM APIs
-  FAISS (Vector DB)
-  Streamlit
-  Docker
+```bash
+git clone https://github.com/skpanigrahy/PanAI-Labs.git
+cd PanAI-Labs
+docker-compose up --build
+```
 
-🎯 Who This Is For
-  Software engineers moving into AI
-  Developers building real AI systems
-  Teams exploring agentic AI
-  Anyone who wants to go beyond tutorials
 
-🚀 Vision
-PanAI Labs is not just a project.
-It’s a step toward:
-  A platform for designing, orchestrating, and deploying AI intelligence
-
-⭐ Support
-  If this helps you:
-  ⭐ Star the repo
-  🔁 Share with others
-  🤝 Contribute
-
-🧠 Author
-  Built by Santosh Panigrahy
