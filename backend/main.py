@@ -4,6 +4,8 @@ from agent.agent import run_agent
 from agent.intent import analyze_intent
 from agent.router import route_query
 from agent.memory import memory
+from rag.store import doc_store
+from pydantic import BaseModel
 
 app = FastAPI(title="PanAI-Labs API", version="1.0.0")
 
@@ -47,6 +49,18 @@ async def chat(request: ChatRequest):
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+class DocumentRequest(BaseModel):
+    text: str    
+
+@app.post("/upload")
+async def upload_document(request: DocumentRequest):
+    doc_store.add_document(request.text)
+    return {
+        "status": "Document added",
+        "chunks": len(doc_store.get_all())
+    }
+
 @app.get("/")
 async def root():
     return {"message": "PanAI-Labs API is running"}

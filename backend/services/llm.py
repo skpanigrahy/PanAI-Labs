@@ -9,16 +9,13 @@ LLM_PROVIDER = os.getenv("LLM_PROVIDER", "mock")
 
 # ---------------- MOCK ----------------
 def mock_llm(messages):
-    last_user = [m for m in messages if m["role"] == "user"][-1]["content"]
+    last_user = messages[-1]["content"]
 
-    # Simple memory simulation
-    history_text = " ".join(m["content"] for m in messages)
+    if "Context:" in last_user:
+        context_part = last_user.split("Context:")[1].split("Question:")[0].strip()
+        question = last_user.split("Question:")[-1].strip()
 
-    if "my name is" in history_text.lower():
-        name = history_text.lower().split("my name is")[-1].strip().split()[0]
-
-        if "what is my name" in last_user.lower():
-            return f"[MOCK MEMORY] Your name is {name.capitalize()}"
+        return f"[MOCK RAG] Based on context: {context_part}"
 
     return f"[MOCK RESPONSE] You asked: '{last_user}'"
 
